@@ -1,0 +1,17 @@
+{
+    "Version": 0,
+    "title": "model third person obstacle course",
+    "description": "",
+    "language": "english",
+    "metaData": "",
+    "visibility": 2,
+    "tags": [
+        "Minigame"
+    ],
+    "isInternal": false,
+    "previewFiles": [],
+    "publishedFileId": 256,
+    "previewImageGuid": {
+        "serializedGuid": "00000000-0000-0000-0000-000000000000"
+    }
+}

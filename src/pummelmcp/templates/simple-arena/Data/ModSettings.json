@@ -1,0 +1,136 @@
+{
+    "Version": 0,
+    "SimpleMinigameSettings": {
+        "NumberOfRounds": 1,
+        "RoundDuration": 120.0,
+        "PointsToWin": 5,
+        "PlacementCondition": 0,
+        "EndConditions": 1,
+        "ChosenPlayerType": 0,
+        "SpawnType": 0,
+        "ShowPlayerScore": true,
+        "OnlyShowCombinedTeamScoreInTeams": false,
+        "MusicGUID": {
+            "serializedGuid": "85d311b6-8c79-4491-bff8-0fc9919b30dc"
+        },
+        "MusicVolume": 0.30000001192092898,
+        "MinPlayersAlive": 1,
+        "AmbienceGUID": {
+            "serializedGuid": "b0b5c869-9b0a-4f7d-ab64-a29200d1e558"
+        },
+        "AmbienceVolume": 0.699999988079071
+    },
+    "SimpleModPlayerSettings": {
+        "topDownCameraMode": 0,
+        "topDownCameraViewAngle": 35.0,
+        "topDownCameraDistance": 10.0,
+        "topDownCameraPositionOffset": {
+            "x": 0.0,
+            "y": 3.950000047683716,
+            "z": -5.300000190734863
+        },
+        "topDownCamerafollowAllAreaRect": {
+            "serializedVersion": "2",
+            "x": -5.0,
+            "y": -5.0,
+            "width": 10.0,
+            "height": 10.0
+        },
+        "sphereMaxMoveDist": 3.0,
+        "maxXMoveDist": 3.0,
+        "maxZMoveDist": 3.0,
+        "topDownCameraFollowAllType": 1,
+        "movementSpeed": 6.0,
+        "movementAcceleration": 50.0,
+        "movementDecelaration": 50.0,
+        "midAirMovementAcceleration": 8.0,
+        "playerGravity": 25.0,
+        "jumpCount": 1,
+        "canJump": true,
+        "jumpSpeed": 7.0,
+        "coyoteTime": 0.20000000298023225,
+        "stepOffset": 0.5,
+        "canPunch": true,
+        "punchRechargeSpeed": 0.75,
+        "punchDamage": 15,
+        "punchStunsTarget": false,
+        "punchStunDuration": 1.0,
+        "stunImmunityLength": 3.0,
+        "shootDistance": 12.0,
+        "shootRechargeSpeed": 0.10000000149011612,
+        "shotSpreadVertical": 45.0,
+        "shotSpreadHorizontal": 20.0,
+        "bulletsPerShot": 1,
+        "firstShotCentred": true,
+        "firingPattern": 0,
+        "respawnEnabled": true,
+        "respawnTime": 3.0,
+        "respawnInvulnerableTime": 1.0,
+        "respawnAnimationType": 0,
+        "hitTrigger": {
+            "m_type": 64,
+            "m_actions": [],
+            "m_hitType": 0
+        },
+        "weaponHitTrigger": {
+            "m_type": 80,
+            "m_actions": [
+                {
+                    "rid": 1000
+                }
+            ],
+            "m_hitType": 1
+        },
+        "tickTrigger": {
+            "m_type": 96,
+            "m_actions": [],
+            "m_interval": {
+                "valueType": 0,
+                "min": 1.0,
+                "max": 2.0
+            }
+        },
+        "onDeathTrigger": {
+            "m_type": 0,
+            "m_actions": []
+        },
+        "onRespawnTrigger": {
+            "m_type": 0,
+            "m_actions": []
+        },
+        "onFirstSpawnTrigger": {
+            "m_type": 0,
+            "m_actions": []
+        },
+        "onRoundEndTrigger": {
+            "m_type": 0,
+            "m_actions": []
+        },
+        "useHealth": true,
+        "showHealthBar": false,
+        "health": 100,
+        "showNameTags": true,
+        "nameTagType": 3
+    },
+    "references": {
+        "version": 2,
+        "RefIds": [
+            {
+                "rid": 1000,
+                "type": {
+                    "class": "ChangeScoreAction",
+                    "ns": "ModSystem.Logic",
+                    "asm": "Assembly-CSharp"
+                },
+                "data": {
+                    "m_type": 128,
+                    "m_version": 0,
+                    "m_targetFlags": 2,
+                    "m_targets": [],
+                    "m_operation": 1,
+                    "m_value": 1
+                }
+            }
+        ]
+    }
+}

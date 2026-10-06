@@ -131,6 +131,9 @@ __pypackages__/
 celerybeat-schedule
 celerybeat.pid
 
+# Decompiled game assembly research output (local-only intermediate)
+research/
+
 # Redis
 *.rdb
 *.aof
@@ -216,3 +219,33 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local game assets, delivered Mods, research and audit records
+/StreamingAssets/
+/imports/
+/outputs/
+/verification/
+/.zcode/
+/workspace-audit-*/
+/Log.txt
+/.release-check/
+
+# Personal, game-specific authoring scripts and tests
+/tools/*
+!/tools/blender_export_pummel.py
+/tests/test_holdem_logic.py
+
+# Local game assets, delivered Mods, research and audit records
+/StreamingAssets/
+/imports/
+/outputs/
+/verification/
+/.zcode/
+/workspace-audit-*/
+/Log.txt
+/.release-check/
+
+# Personal, game-specific authoring scripts and tests
+/tools/*
+!/tools/blender_export_pummel.py
+/tests/test_holdem_logic.py

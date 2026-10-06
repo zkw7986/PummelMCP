@@ -1,0 +1,111 @@
+{
+  "format_version": 1,
+  "templates": [
+    {
+      "id": "minimal-third-person",
+      "name": "第三人称基础",
+      "description": "适合第三人称移动、自定义玩法的最小起点",
+      "source_folder": "model minimal third person",
+      "files": {
+        "Data/Lighting.json": "149d49259e5740b26a6f0364407630d9556efbde9e621b35a2629598246a743f",
+        "Data/MainScene.scene": "3b3f12228d86a31d439e51c463496c1e4c278f2beb1b7a8d36371b4199c815d0",
+        "Data/Meta.json": "7bb3d4c60f04fff9e5187eac93a0f32f46a026c3d1b1f4c1e8644794c28cb89b",
+        "Data/MinigameDefinitionData.json": "ce260ae68de0157f07de2fafc43abac8736ed7dc6f4dd62d69bb951fb8a190e3",
+        "Data/ModSettings.json": "f48b896a126079492b47aa0c7d7bb4758dab7e6fe0e0af887289d327385ebfa1",
+        "Data/PostProcessing.data": "3d7870363a5b46a80533321771b33d21c0889c417dedd3aff2471d4d60d6de19",
+        "Data/Preview.jpg": "2442d4c1f28ff126cb8066c143046caa273273dca5fe7ef5a46d664df19bcdba",
+        "Data/WorkshopItem.json": "104d76046d663d526f358212798be75e08663faac172e07e9dd5e770c5abc426"
+      }
+    },
+    {
+      "id": "minimal-top-down",
+      "name": "俯视角基础",
+      "description": "适合俯视角移动、自定义玩法的最小起点",
+      "source_folder": "model minimal top down",
+      "files": {
+        "Data/Lighting.json": "149d49259e5740b26a6f0364407630d9556efbde9e621b35a2629598246a743f",
+        "Data/MainScene.scene": "cd13305a39f7b51b77ed97843d3df16ba7f9c1b65f8d0c2f18176b7e659ba8f7",
+        "Data/Meta.json": "8d156c81d25795677fc82ef63b414f5bf52dce7bdcbaf00a5f2bf596f7af7955",
+        "Data/MinigameDefinitionData.json": "301a82253d57661b9cf8d964b62179ea47ea989fd8d5bfd425a96513368645d9",
+        "Data/ModSettings.json": "2ed6c56adb50c875d328d1b4ade1888e74e38c36a3b7361009584d9a7badc4df",
+        "Data/PostProcessing.data": "3d7870363a5b46a80533321771b33d21c0889c417dedd3aff2471d4d60d6de19",
+        "Data/Preview.jpg": "ee853518b336470d4971425497a1247ffd2e06f0d8b16e5f85a46f95fa4f3b12",
+        "Data/WorkshopItem.json": "78828cfead1dccdec69a696f0d452b32789b727933068a91cd5b6c92992bb946"
+      }
+    },
+    {
+      "id": "simple-arena",
+      "name": "简单竞技场",
+      "description": "适合竞技场和多人对抗",
+      "source_folder": "model simple arena",
+      "files": {
+        "Data/Lighting.json": "149d49259e5740b26a6f0364407630d9556efbde9e621b35a2629598246a743f",
+        "Data/MainScene.scene": "006c7d1f0e1391169c9c19edad0c143188f16643d41117da5a646ec7870d238b",
+        "Data/Meta.json": "12dda7ee31c62ce0e6248a87bba1ae49c5b20cb4434e615833d5cb38124903b3",
+        "Data/MinigameDefinitionData.json": "e7e25a31d01d65a1fddeabc45db903d9534b35cc1341cdc8f9d73893640894de",
+        "Data/ModSettings.json": "190b9a100134ec89b025bf81dceb206a1b849d2278ee7d864f615d50b38157a5",
+        "Data/PostProcessing.data": "3d7870363a5b46a80533321771b33d21c0889c417dedd3aff2471d4d60d6de19",
+        "Data/Preview.jpg": "715789753cfede4bbbba8873adc02ad304b1655543607e89cf709c31cf67922a",
+        "Data/WorkshopItem.json": "11a42fc0e0d737103f768103301e7f3ae6ac16750bca06ef283a95e408787b07"
+      }
+    },
+    {
+      "id": "third-person-obstacle-course",
+      "name": "第三人称障碍赛",
+      "description": "适合平台跳跃、障碍赛、竞速，包含重力道具预制件",
+      "source_folder": "model third person obstacle course",
+      "files": {
+        "Assets/Prefabs/Gravity Powerup Held.pfab": "781cad231f8bd49dbe791582eef81da21a5f55fa9e238c348f9e2742e9abad1d",
+        "Assets/Prefabs/Gravity Powerup Held.pfab.pmeta": "80f102b1921e5411e4bcdbdf6b95cf26682a18aa0e68766839dde6691a4334b2",
+        "Assets/Prefabs/Gravity Powerup.pfab": "6a859bddba09497e69c0e1bda2d016b16e87f8359703a96899ae24f3a131fef7",
+        "Assets/Prefabs/Gravity Powerup.pfab.pmeta": "b2ff5571a8b1d6971dfc6d04bd1c5f0b4aa36e92e3d3bb2677729779444a93cb",
+        "Assets/Prefabs/Item (Gravity Powerup Held).pfab": "4497d145fb97dbbe39ce43490a7bdf18a374fa5048407ca717fa187a62531974",
+        "Assets/Prefabs/Item (Gravity Powerup Held).pfab.pmeta": "84fb02ee82af0138ed88cc81df541c58df88bbeb6c33c03c56afe9e863e968b9",
+        "Assets/Textures/Preview Image.jpg": "c96c2db43fd02811aedb1b4578b82f27f30facbbb4458d01c3eade3b5d45e598",
+        "Assets/Textures/Preview Image.jpg.pmeta": "62f2f2ae144c3920a9f1a3435b6d918cb4b63eb6e88be1b7d17c76c814074096",
+        "Data/Lighting.json": "8f7147bb5639df88c3f83860bc1a954d4115c0cdd0a61399a4a66c0d4862f99d",
+        "Data/MainScene.scene": "07bf6f207567158f7bbc6cfc2e9845ee17f86a0cf057886a7f27ca7f9cdaf9e9",
+        "Data/Meta.json": "bf41254b33cecba4b82b9138c3a978b97a646b2961994809b8809f89cf5a48f1",
+        "Data/MinigameDefinitionData.json": "21ef5032d0df5c862944148599dcc7374a6c0472734526734ab156c14cdf091b",
+        "Data/ModSettings.json": "4796bfd5e278d033a825961a5e160dc2b3f885b04343a8374cc21b46930a7847",
+        "Data/PostProcessing.data": "3d7870363a5b46a80533321771b33d21c0889c417dedd3aff2471d4d60d6de19",
+        "Data/Preview.jpg": "61ef4deb0cd5f810987db6fd9b522fa6dea033d00468ab79ae2faec9753711c6",
+        "Data/WorkshopItem.json": "d8a00a6b1a4b883ddcd24c6909a555bb62f0d2db38c50f0e3dc15a751afbb5d0"
+      }
+    },
+    {
+      "id": "third-person-shooter",
+      "name": "第三人称射击",
+      "description": "适合射击对抗，包含枪械和道具预制件",
+      "source_folder": "model third person shooter",
+      "files": {
+        "Assets/Prefabs/BeamItem.pfab": "aa0c105d730a56be5894b518481d83a2c6331e9f16fc52012dc2d65dd9b5614d",
+        "Assets/Prefabs/BeamItem.pfab.pmeta": "713783107b195d6cdf1f91869574352d9e93b28ae761e17c0305fa91cb0d4f81",
+        "Assets/Prefabs/BeamWeapon.pfab": "f53492b21c170563a26657876137a8967f0c32fc131dc1a2e6813fa62c3171c6",
+        "Assets/Prefabs/BeamWeapon.pfab.pmeta": "a3e66fe2f13b6ba2fdf4c97dc9411fa32c9b4625f0fba1a23d55e9e55b411fbf",
+        "Assets/Prefabs/MachineGun.pfab": "aefdbb38939094d46ff24bdb7ec535ed500c6c99588371bc9a2d42e5a3c13445",
+        "Assets/Prefabs/MachineGun.pfab.pmeta": "7f2701dfc0b8f63ceca562f5cf6a1a4f2d09f854d14b8c154336c072b754a3e3",
+        "Assets/Prefabs/MachineGunItem.pfab": "575766860baa529f66dd57c5a11ecf48dd0f3b36a2f59f9554b2cc1813706eed",
+        "Assets/Prefabs/MachineGunItem.pfab.pmeta": "9eb07081a913d78291ed43fbd4ce3fdb49deb61d6daaa68c856aeb22c806c1b5",
+        "Assets/Prefabs/Shotgun.pfab": "5e0439732fa46001201b22512196ddbface690fe3e13f9e515a735ee833c41d0",
+        "Assets/Prefabs/Shotgun.pfab.pmeta": "3e500ebf05d38458fb4006945916c351c29041dca3300a4b5ea1556a0381a21e",
+        "Assets/Prefabs/ShotgunItem.pfab": "64852f76d0596a4dd973e81797ab5ea2827602e5d22ceb23a64be5b6ba851479",
+        "Assets/Prefabs/ShotgunItem.pfab.pmeta": "6e65c69adfbccf54bcf22ed3af429434ad63ee903c8fc81ecf4bb8fe77913663",
+        "Assets/Prefabs/Sniper.pfab": "6f1854f47b905063669574ff6ed0d518a7b268ac84e27e9a6b72a9a4bd3ca71b",
+        "Assets/Prefabs/Sniper.pfab.pmeta": "e1a50e436c40aa4a55131471fadd8dfa6fa1be35aaad1fa828c91fd81318953d",
+        "Assets/Prefabs/SniperItem.pfab": "3ca2077a70a56c9bc37cdddecaf6d114db540d89f7a5338d5e5d4159d43051d4",
+        "Assets/Prefabs/SniperItem.pfab.pmeta": "3bb24e69ae16e083d2a97d329d0e7d6353f27f6f35ac7dd63e267624e3059b45",
+        "Assets/Prefabs/Stairs.pfab": "78f7699af3c48aceb67fa56d126d85a26017823f740d785bccf3214e2bf30216",
+        "Assets/Prefabs/Stairs.pfab.pmeta": "7dfefd977690072f93e72691de69524b0652965af546dc44fb452b58343d7341",
+        "Data/Lighting.json": "149d49259e5740b26a6f0364407630d9556efbde9e621b35a2629598246a743f",
+        "Data/MainScene.scene": "6917b242a68298defc095b22bfb6c077bc3669875f97e1b0dad453a64c83bd15",
+        "Data/Meta.json": "53bb32b281287f8008be96ddd7ecafb818e9e9f5c5cab580f81c21f4b5961064",
+        "Data/MinigameDefinitionData.json": "cd5b8f5e879cfb727448d5ec38778c30edcf539d0d3228002f26eb4f8ad0732e",
+        "Data/ModSettings.json": "36950da4967b59c2eedf61b1058c631f6595d01ba9e443c148f93249fccab5ce",
+        "Data/PostProcessing.data": "3d7870363a5b46a80533321771b33d21c0889c417dedd3aff2471d4d60d6de19",
+        "Data/Preview.jpg": "8861da3510e3aaf369020a172e00fe95215ce16d77debdfcdac8ae48273db712",
+        "Data/WorkshopItem.json": "78e575c83341c03d2ea1b7c096121620587b5f776c2a49364a9cefe31dae3db0"
+      }
+    }
+  ]
+}

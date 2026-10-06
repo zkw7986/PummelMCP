@@ -1,0 +1,10 @@
+* text=auto eol=lf
+
+# Catalog hashes cover exact template bytes, including JSON newlines.
+src/pummelmcp/templates/** -text
+tests/fixtures/*.scene -text
+
+*.pfab -text
+*.png -text
+*.jpg -text
+*.data -text

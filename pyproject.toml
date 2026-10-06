@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pummelmcp"
+version = "0.6.0b1"
+description = "Research tooling for the Pummel Party PMH scene format"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "PummelMCP contributors" }]
+dependencies = ["mcp>=2.2,<3"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.scripts]
+pummelmcp = "pummelmcp.cli:main"
+pummelmcp-mcp = "pummelmcp.mcp_server:main"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+pummelmcp = ["templates/**/*", "templates/catalog.json"]
