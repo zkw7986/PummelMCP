@@ -1,10 +1,59 @@
 # PummelMCP
 
+![PummelMCP：从想法到小游戏 / From ideas to minigames](docs/images/pummelmcp-banner.svg)
+
+[![Tests](https://github.com/zkw7986/PummelMCP/actions/workflows/tests.yml/badge.svg)](https://github.com/zkw7986/PummelMCP/actions/workflows/tests.yml)
+[![Release](https://img.shields.io/github/v/release/zkw7986/PummelMCP?include_prereleases&label=release)](https://github.com/zkw7986/PummelMCP/releases)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)](pyproject.toml)
+[![License](https://img.shields.io/github/license/zkw7986/PummelMCP)](LICENSE)
+
 [中文](#中文) | [English](#english)
 
 ## 中文
 
 初版安装及客户端配置请先阅读[安装指南](docs/INSTALLATION.md)。本仓库发布核心工具和模板，不包含个人小游戏成果或完整游戏资源。
+
+### 用 AI 协作制作 Pummel Party 小游戏
+
+通过支持 MCP 的 AI 客户端（例如 Codex），检查场景、创建小游戏起点、组合受支持的玩法并持续修改原模组。**当前为 v0.6.0b1 实验版：67 个工具、5 个初始化模板。**
+
+[开始安装](docs/INSTALLATION.md) · [下载初版](https://github.com/zkw7986/PummelMCP/releases/tag/v0.6.0b1) · [查看功能边界](docs/AUTHORING_V0_3.md)
+
+### 制作示例
+
+下面是作者在本地使用 Codex、MCP、专项脚本及外部素材共同制作的项目预览。用于展示制作方向，不代表初版通用接口能一键复现全部玩法；Bridge Rush 是离线布局预览。
+
+| Bridge Rush · 桥梁竞速 | Hide in Hue · 变身躲猫猫 | Music Park Rally · 音乐公园竞速 |
+|---|---|---|
+| ![Bridge Rush 地图布局预览](docs/images/bridge-rush.png) | ![Hide in Hue 模组预览](docs/images/hide-in-hue.jpg) | ![Music Park Rally 模组预览](docs/images/music-park-rally.jpg) |
+| 放射桥梁、道具拾取与计分 | 变身伪装、猎人与淘汰 | 赛道、机关、灯光与音效 |
+
+### 能做什么
+
+| 能力 | 用途 |
+|---|---|
+| 场景检查与有限安全修改 | 读取 PMH 场景、对象、组件、触发器和引用，修改已支持字段 |
+| 五个初始化模板 | 第三人称、俯视角、竞技场、障碍赛、射击起点 |
+| 实验性玩法制作 | 基于有来源证据的组件和动作组合受支持规则 |
+| 资产与 Blender 导入 | 查询自己游戏的内置资产，导入经过验证的 OBJ、贴图和材质 |
+| 制作流程与素材寻找 | 首次方案审核、原目录迭代，主动寻找适合的模型、音效和 BGM |
+| 验证与试玩证据 | 静态检查、文件完整性及手动试玩记录；游戏内测试由使用者完成 |
+
+### 第一次使用
+
+1. 安装 Python 3.10+，并准备自己安装的 Pummel Party。
+2. 下载仓库或 Release 源码包，按[安装指南](docs/INSTALLATION.md)安装并连接 AI 客户端。
+3. 配置自己的游戏资源、`WorkshopMods` 和素材导入路径。
+4. 向 AI 提出一个简单玩法，提供写入授权、审核首次方案，然后在游戏中打开试玩。
+
+你可以这样开始：
+
+> 帮我制作一个简单竞技场小游戏：玩家进入得分区域获得分数。先检查工具支持的能力、提出详细方案，并寻找合适的场景素材和提示音。
+
+仓库包含核心源码和模板；完整游戏资源、作者个人小游戏及素材库不随仓库分发。部分复杂玩法仍需要额外脚本或编辑器操作。
+
+<details>
+<summary><strong>展开完整技术说明：接口、命令示例、格式与安全边界</strong></summary>
 
 ### 项目简介与当前能力
 
@@ -238,6 +287,8 @@ delete_action(..., event_property="OnHitActions", action_rid=1001,
 
 复制前先调用 `plan_gameobject_duplication`；安全方案只读报告预览 UUID、组件来源跨度/策略、追加位置和预期修改。`duplicate_gameobject` 对当前字节重新执行全部校验，可检查 `expected_scene_hash`，写入并解析同目录临时场景，验证身份、层级、来源保留和引用策略，创建备份后原子替换。
 
+</details>
+
 ### 内置小游戏初始化模板
 
 完整模板保存在 src/pummelmcp/templates/，随 GitHub 克隆和 Python 包分发，不依赖原作者的游戏路径。catalog.json 包含文件完整性校验。
@@ -268,6 +319,48 @@ delete_action(..., event_property="OnHitActions", action_rid=1001,
 ## English
 
 Start with the [installation and client configuration guide](docs/INSTALLATION.md). This release includes core tools and templates, not personal game deliveries or the full game assets.
+
+### Make Pummel Party minigames with an AI collaborator
+
+Use an MCP-enabled AI client, such as Codex, to inspect scenes, initialize minigames, compose supported mechanics and keep editing the original Mod. **Experimental v0.6.0b1: 67 tools and five starter templates.**
+
+[Install and connect](docs/INSTALLATION.md) · [Download the initial release](https://github.com/zkw7986/PummelMCP/releases/tag/v0.6.0b1) · [Capability boundaries](docs/AUTHORING_V0_3.md)
+
+### Project previews
+
+These local projects were created by the author with Codex, MCP, custom scripts and external assets. They illustrate possible production directions, not one-click reproduction by the initial generic interfaces. Bridge Rush is an offline layout preview.
+
+| Bridge Rush | Hide in Hue | Music Park Rally |
+|---|---|---|
+| ![Bridge Rush layout preview](docs/images/bridge-rush.png) | ![Hide in Hue Mod preview](docs/images/hide-in-hue.jpg) | ![Music Park Rally Mod preview](docs/images/music-park-rally.jpg) |
+| Radial bridges, item pickups and scoring | Disguise transformations, hunters and elimination | Track geometry, hazards, lighting and audio |
+
+### Features
+
+| Capability | Purpose |
+|---|---|
+| Scene inspection and bounded safe editing | Read PMH scenes, objects, components, triggers and references; edit supported fields |
+| Five starter templates | Third-person, top-down, arena, obstacle course and shooter starting points |
+| Experimental game authoring | Compose supported rules from source-backed components and Actions |
+| Assets and Blender import | Query your game's built-in assets and import validated OBJ models, textures and materials |
+| Production workflow and asset sourcing | Initial plan review, in-place iteration and proactive sourcing of models, sound effects and BGM |
+| Validation and playtest evidence | Static checks, file integrity and manual playtest records; users test in the game |
+
+### First steps
+
+1. Install Python 3.10+ and your own copy of Pummel Party.
+2. Download the repository or release source ZIP, then follow the [installation guide](docs/INSTALLATION.md) to connect your AI client.
+3. Configure your game assets, `WorkshopMods` and import paths.
+4. Ask for a simple mechanic, authorize writes, review the first plan and open the result in the game to playtest.
+
+Example request:
+
+> Make a simple arena minigame where players earn points by entering a score zone. Inspect supported capabilities first, propose a detailed plan, and find suitable scene assets and a feedback sound.
+
+The repository includes core source and starter templates, not the full game assets or the author's personal games and asset library. Some complex mechanics need additional scripts or editor work.
+
+<details>
+<summary><strong>Full technical reference: interfaces, command examples, format and safety boundaries</strong></summary>
 
 ### New: complete-file authoring v0.3 (experimental)
 
@@ -655,6 +748,8 @@ position, and estimated mutations without writing. `duplicate_gameobject` repeat
 checks against current bytes, optionally verifies `expected_scene_hash`, writes and
 parses a same-directory temporary Scene, validates identity/hierarchy/source
 preservation/reference policy, creates a backup, and uses atomic replacement.
+
+</details>
 
 ### Bundled minigame starter templates
 

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title description">
+  <title id="title">PummelMCP — 从想法到小游戏 / From ideas to minigames</title>
+  <desc id="description">通过 AI 客户端、MCP 工具和 Pummel Party 编辑器制作及验证小游戏。Author with an AI client and MCP tools, then test in Pummel Party.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#122139"/><stop offset="1" stop-color="#0b1220"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#ffb457"/><stop offset="1" stop-color="#fa7855"/></linearGradient>
+  </defs>
+  <rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+  <circle cx="1170" cy="0" r="250" fill="#24364d" opacity=".35"/>
+  <g font-family="Segoe UI, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif">
+    <rect x="48" y="38" width="74" height="6" rx="3" fill="url(#accent)"/>
+    <text x="48" y="108" fill="#f7f8fa" font-size="56" font-weight="700">PummelMCP</text>
+    <text x="48" y="151" fill="#d9e2ef" font-size="23">从想法到小游戏 · 用 AI 协作制作 Pummel Party 模组</text>
+    <text x="48" y="183" fill="#92a8c3" font-size="18">From ideas to minigames · Author Pummel Party Mods with AI</text>
+    <g transform="translate(48 223)">
+      <rect width="340" height="90" rx="12" fill="#1c2c43" stroke="#354b65"/>
+      <text x="22" y="37" fill="#ffb457" font-size="21" font-weight="600">01  描述玩法</text>
+      <text x="22" y="65" fill="#c4d2e4" font-size="16">Describe your game · AI client</text>
+      <path d="M354 45h34m-10-8 10 8-10 8" fill="none" stroke="#ffb457" stroke-width="2"/>
+      <rect x="400" width="340" height="90" rx="12" fill="#1c2c43" stroke="#354b65"/>
+      <text x="422" y="37" fill="#ffb457" font-size="21" font-weight="600">02  构建与修改</text>
+      <text x="422" y="65" fill="#c4d2e4" font-size="16">Inspect, author and edit · MCP tools</text>
+      <path d="M754 45h34m-10-8 10 8-10 8" fill="none" stroke="#ffb457" stroke-width="2"/>
+      <rect x="800" width="340" height="90" rx="12" fill="#1c2c43" stroke="#354b65"/>
+      <text x="822" y="37" fill="#ffb457" font-size="21" font-weight="600">03  编辑器与游戏验证</text>
+      <text x="822" y="65" fill="#c4d2e4" font-size="16">Open and playtest · Pummel Party</text>
+    </g>
+  </g>
+</svg>
